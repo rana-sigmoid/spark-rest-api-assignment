@@ -33,33 +33,3 @@ for company in company_name:
 	df = pd.DataFrame(json.loads(data)["historical prices"])
 
 	df.to_csv(f"/Users/ranadilendrasingh/PycharmProjects/python-spark-assignment/stock_data/{company}.csv",  encoding='utf-8')
-
-	#
-	# entry = {
-	# 	"country": company,
-	# 	"stock_data": data["historical prices"]
-	# }
-	#
-	# print(entry)
-	#
-	#
-	# data_file = open('data_file.csv', 'w')
-	# csv_writer = csv.writer(data_file)
-	#
-	# # Counter variable used for writing
-	# # headers to the CSV file
-	# count = 0
-	#
-	# for emp in data:
-	# 	if count == 0:
-	# 		# Writing headers of CSV file
-	# 		header = emp.keys()
-	# 		csv_writer.writerow(header)
-	# 		count += 1
-	#
-	# 	# Writing data of CSV file
-	# 	csv_writer.writerow(emp.values())
-
-
-#df = pd.DataFrame(result)
-# changed to main branch
