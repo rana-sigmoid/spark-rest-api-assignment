@@ -1,3 +1,8 @@
+# comments/code review
+# for some query like 1st and 4th query window funtions can also be used as an approach.
+# comments can be added in code for better readability.
+
+
 from flask import Flask
 import json
 
