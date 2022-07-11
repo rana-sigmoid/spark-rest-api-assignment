@@ -1,3 +1,10 @@
+# comments/code review
+# for some query like 1st and 4th query window funtions can also be used as an approach.
+# comments can be added in code for better readability.
+# can use "close" in the fourth query instead of "high" for overall movement of stock
+# can also remove post request if not in use
+
+
 from flask import Flask
 import json
 
