@@ -97,7 +97,8 @@ def query9():
 if __name__ == '__main__':
 
     spark = SparkSession.builder.master("local").appName("SparkByExamples.com").getOrCreate()
-    stock_names = ["ABCB", "ABG", "ABM", "ABTX", "ACA"]
+
+    stock_names = ["ABCB", "ABG", "ABM", "ABTX", "ACA", "ACLS", "ADC", "ADTN", "ADUS", "AEIS", "AEL", "AGO", "AGYS", "AHH", "AIN", "AIR", "AIT", "AJRD", "AKR", "ALEX", "ALG", "ALGT", "ALRM", "AMBC", "AMCX"]
     query1 = {}
     df_stocks = None
     for stock_n in stock_names:

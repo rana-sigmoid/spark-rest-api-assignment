@@ -7,9 +7,20 @@ from pyspark.sql.functions import col
 from pyspark.sql import SparkSession
 spark = SparkSession.builder.master("local").appName("SparkByExamples.com").getOrCreate()
 
+import requests
 
+url = "https://stock-market-data.p.rapidapi.com/market/index/s-and-p-six-hundred"
 
-stock_names = ["ABCB", "ABG", "ABM", "ABTX", "ACA"]
+headers = {
+	"X-RapidAPI-Key": "40b27a5d62mshead33450c6e50ccp159aeejsn1841eea50cff",
+	"X-RapidAPI-Host": "stock-market-data.p.rapidapi.com"
+}
+
+response = requests.request("GET", url, headers=headers)
+
+print(response.text)
+
+stock_names = ["ABCB", "ABG", "ABM", "ABTX", "ACA", "ACLS", "ADC", "ADTN", "ADUS", "AEIS", "AEL", "AGO", "AGYS", "AHH", "AIN", "AIR", "AIT", "AJRD", "AKR", "ALEX", "ALG", "ALGT", "ALRM", "AMBC", "AMCX"]
 query1={}
 df_stocks = None
 for stock_n in stock_names:

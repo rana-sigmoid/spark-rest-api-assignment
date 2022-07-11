@@ -16,8 +16,8 @@ import requests
 #
 # print(response.text)
 
-company_name = ["ABCB", "ABG", "ABM", "ABTX", "ACA"]
-
+company_name = ["ABCB", "ABG", "ABM", "ABTX", "ACA", "ACLS", "ADC", "ADTN", "ADUS", "AEIS", "AEL", "AGO", "AGYS", "AHH",
+			   "AIN", "AIR", "AIT", "AJRD", "AKR", "ALEX", "ALG", "ALGT", "ALRM", "AMBC", "AMCX"]
 
 url = "https://stock-market-data.p.rapidapi.com/stock/historical-prices"
 headers = {
